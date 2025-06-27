@@ -5,7 +5,7 @@ import Navbar from './shared/Navbar';
 const RootLayOut = () => {
     return (
         <>
-            <div className='bg-[#262c3a] h-screen'>
+            <div className='bg-[#262c3a] '>
                 <Navbar></Navbar>
                 <Outlet></Outlet>
             </div>
