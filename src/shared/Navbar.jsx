@@ -24,10 +24,9 @@ const Navbar = () => {
                     <a className="btn btn-ghost text-xl">Akando</a>
                 </div>
 
-                <div className="navbar-end">
-                   
+                <div className='navbar-center'>
                     <div className='hidden lg:flex'>
-                        <ul className="menu menu-horizontal px-1 gap-8 text-lg">
+                        <ul className="menu menu-horizontal px-1 md:gap-3 xl:gap-6 text-lg">
                             <li className='hover:text-[#00c58e]'><NavLink>Home</NavLink></li>
                             <li className='hover:text-[#00c58e]'><NavLink>About</NavLink></li>
                             <li className='hover:text-[#00c58e]'><NavLink>My Skill</NavLink></li>
@@ -35,7 +34,14 @@ const Navbar = () => {
                             <li className='hover:text-[#00c58e]'><NavLink>Contact</NavLink></li>
                         </ul>
                     </div>
+                </div>
 
+                <div className="navbar-end">
+                   
+                    
+                    <div>
+                        <button className='btn text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Resume</button>
+                    </div>
                 
                     <button onClick={() => setOpen(true)} className="btn bg-[#1b1f2a] outline-none text-white lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
