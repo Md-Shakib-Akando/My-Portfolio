@@ -4,25 +4,27 @@ import Lottie from 'lottie-react';
 
 const About = () => {
   return (
-    <div className='bg-[#2d3340]  pt-20 pb-40'>
-      <div className='max-w-6xl mx-auto px-4 md:px-8'>
-        <div className='flex flex-col md:flex-row items-center gap-8'>
+    <div id='about' className=' bg-[#2d3340] py-16'>
+      <div className='max-w-11/12 mx-auto'>
+        <div className='flex flex-col-reverse lg:flex-row md:justify-between items-center gap-8'>
           
-          
-          <div className='md:w-1/2 text-white text-center md:text-start'>
-            <h2 className='text-3xl md:text-4xl font-bold mb-4'>About Me</h2>
-            <p className='text-base md:text-lg leading-relaxed'>
-              Hello! I'm a passionate web developer with a love for clean code, elegant UI, and smooth user experiences. 
-              I specialize in building full-stack applications using modern tools like React, Tailwind CSS, and Firebase. 
-              When I’m not coding, I enjoy learning new technologies and exploring creative design.
-            </p>
+         
+          <div className='w-full md:w-1/3 flex justify-center'>
+            <Lottie
+              animationData={Animation}
+              loop={true}
+              className='w-full h-auto max-h-[400px]'
+            />
           </div>
 
           
-          <div className='md:w-1/2 w-full'>
-            <Lottie animationData={Animation} loop={true} className='w-full h-auto max-h-[400px]' />
+          <div className='text-white text-center lg:text-left lg:w-2/3'>
+            <h2 className='text-3xl md:text-4xl font-bold mb-4 border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto lg:mx-0'>About Me</h2>
+            <p className='text-base md:text-lg leading-relaxed'>
+              I started my programming journey in 2023, gradually building my skills and passion for the field. Over time, I have developed strong expertise in frontend development, mastering tools and technologies like HTML, CSS, JavaScript, React, and Tailwind CSS. In addition, I’ve gained solid knowledge in programming languages such as C and C++.I’ve also begun exploring backend technologies. As a university student, I actively take part in hackathons and programming contests, where I enjoy solving challenges and learning through teamwork. I particularly value collaborative environments that offer opportunities to grow and share ideas. Outside of coding, I have a deep interest in sports—especially cricket and football—which keep me active and help me stay focused and disciplined in both life and work.
+            </p>
           </div>
-          
+
         </div>
       </div>
     </div>
