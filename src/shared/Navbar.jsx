@@ -31,8 +31,8 @@ const Navbar = () => {
                                 <li className='hover:text-[#00c58e]'><a href="#">Home</a></li>
                                 <li className='hover:text-[#00c58e]'><a href="#about">About</a></li>
                                 <li className='hover:text-[#00c58e]'><a href="#skill">Skills</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#about">Project</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#about">Contact</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#project">Project</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -65,10 +65,10 @@ const Navbar = () => {
                         </div>
                         <ul className="space-y-10 text-center">
                             <li className='hover:text-[#00c58e]'><a href="#">Home</a></li>
-                            <li className='hover:text-[#00c58e]'><a href="#about">About</a></li>
-                            <li className='hover:text-[#00c58e]'><a href="#skill">Skills</a></li>
-                            <li className='hover:text-[#00c58e]'><a href="#about">Project</a></li>
-                            <li className='hover:text-[#00c58e]'><a href="#about">Contact</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#about">About</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#skill">Skills</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#project">Project</a></li>
+                                <li className='hover:text-[#00c58e]'><a href="#contact">Contact</a></li>
                         </ul>
                         <div className='lg:hidden  flex justify-center mt-10'>
                             <button className='btn mr-2 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Resume</button>

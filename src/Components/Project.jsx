@@ -6,14 +6,14 @@ import { Link } from 'react-router';
 import { SiDaisyui, SiExpress, SiFirebase, SiMongodb, SiReact, SiTailwindcss, SiVite } from 'react-icons/si';
 const Project = () => {
     return (
-        <section className="p-4 lg:p-8  ">
+        <section id='project' className="p-4 lg:p-8  ">
             <h2 className="text-3xl my-10 text-white font-bold   border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto ">
                 My Project
             </h2>
             <div className="container text-white mx-auto space-y-12">
                 <div className="flex flex-col lg:gap-5 xl:gap-9 overflow-hidden rounded-md border-1 p-3 border-[#00c58e] shadow-md shadow-[#00c58e] lg:flex-row">
                     <div className='flex flex-1 justify-center  lg:justify-start overflow-hidden rounded-md'>
-                        <img src={ProjectImg1} alt="" className="w-full h-70 md:h-90 rounded-md transition-transform duration-300 ease-in-out hover:scale-110 aspect-video hover:cursor-pointer" />
+                        <img src={ProjectImg1} alt="" className="w-full h-70 md:h-90 rounded-md transition-transform duration-300 ease-in-out hover:scale-110 aspect-video hover:cursor-pointer " />
                     </div>
                     <div className="flex  flex-col justify-center lg:justify-start flex-1 p-6 pl-0 ">
 
