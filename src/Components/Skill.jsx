@@ -50,7 +50,7 @@ const Skill = () => {
         <h2 className='text-4xl font-bold mb-8 border-b-2 border-b-[#00c58e] w-fit mx-auto pb-3'>My Skills</h2>
 
 
-        <div className="flex flex-wrap justify-center gap-4 my-10 ">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 my-10 ">
           {categories.map(category => (
             <button
               key={category}

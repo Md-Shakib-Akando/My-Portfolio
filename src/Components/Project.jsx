@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ProjectImg1 from '../assets/ProjectImg/Screenshot 2025-06-28 185817.png';
 import ProjectImg2 from '../assets/ProjectImg/Screenshot 2025-06-28 185946.png';
 import ProjectImg3 from '../assets/ProjectImg/Screenshot 2025-06-28 185855.png';
-import { Link } from 'react-router';
 import { SiDaisyui, SiExpress, SiFirebase, SiMongodb, SiReact, SiTailwindcss, SiVite } from 'react-icons/si';
 
 const projects = [
@@ -10,8 +9,7 @@ const projects = [
         id: 1,
         name: "RentifyCars",
         image: ProjectImg1,
-        description:
-            "RentifyCars is a modern, user-friendly car rental platform designed to make the car booking process smooth and secure for both customers and rental service providers.",
+        description: "RentifyCars is a modern, user-friendly car rental platform designed to make the car booking process smooth and secure for both customers and rental service providers.",
         features: [
             "Implemented secure user login using Firebase Auth and protected private routes with JWT tokens",
             "Enabled car management system (Add, Update, Delete) for logged-in users, linked with their unique profiles",
@@ -35,13 +33,12 @@ const projects = [
         id: 2,
         name: "Plant Care",
         image: ProjectImg2,
-        description:
-            "A full-stack web application designed to help users manage their indoor and outdoor plants. And detailed plant care info, it's your smart assistant for keeping your greenery healthy. ",
+        description: "A full-stack web application designed to help users manage their indoor and outdoor plants. And detailed plant care info, it's your smart assistant for keeping your greenery healthy.",
         features: [
-            "Mobile-Responsive Interface – Seamless user experience across all devices using Tailwind CSS",
-            "Comprehensive Plant Details – Store and access care level, watering frequency, sunlight needs, and more",
-            "View Recently Added Plants – Instantly see the latest plants you've added to your collection",
-            "Plant Management (Add, Update, Delete) – Easily track your plants with full CRUD functionality"
+            "Mobile-Responsive Interface using Tailwind CSS",
+            "Comprehensive Plant Details",
+            "View Recently Added Plants",
+            "Plant Management (Add, Update, Delete)"
         ],
         techIcons: [
             <SiVite size={28} className="text-[#646CFF]" />,
@@ -60,12 +57,11 @@ const projects = [
         id: 3,
         name: "Job Track",
         image: ProjectImg3,
-        description:
-            "JobTrack is designed to connect job seekers with employers in a simple, user-friendly interface. It aims to streamline the job search and hiring process by offering tools for posting, searching, and managing job applications.",
+        description: "JJobTrack is designed to connect job seekers with employers in a simple, user-friendly interface. It aims to streamline the job search and hiring process by offering tools for posting, searching, and managing job applications.",
         features: [
             "User authentication and registration (Firebase Auth)",
             "Data management with React state and hooks",
-            "Company-wise job filtering and display",
+            "Company-wise job filtering",
             "Route-based navigation for better UX"
         ],
         techIcons: [
@@ -83,17 +79,6 @@ const projects = [
 
 const Project = () => {
     const [selectedProject, setSelectedProject] = useState(null);
-    const [showModal, setShowModal] = useState(false);
-
-    const openModal = (project) => {
-        setSelectedProject(project);
-        setShowModal(true);
-    };
-
-    const closeModal = () => {
-        setSelectedProject(null);
-        setShowModal(false);
-    };
 
     return (
         <section id="project" className="p-4 lg:p-8">
@@ -105,8 +90,7 @@ const Project = () => {
                 {projects.map((project, index) => (
                     <div
                         key={project.id}
-                        className={`flex flex-col lg:gap-5 xl:gap-9 overflow-hidden rounded-md border-1 p-3 border-[#00c58e] shadow-md shadow-[#00c58e] ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'
-                            }`}
+                        className={`flex flex-col lg:gap-5 xl:gap-9 overflow-hidden rounded-md border-1 p-3 border-[#00c58e] shadow-md shadow-[#00c58e] ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
                     >
                         <div className="flex justify-center lg:justify-start overflow-hidden rounded-md flex-1">
                             <img
@@ -129,7 +113,10 @@ const Project = () => {
 
                             <div className="flex flex-wrap gap-2 mt-6 lg:gap-4">
                                 <button
-                                    onClick={() => openModal(project)}
+                                    onClick={() => {
+                                        setSelectedProject(project);
+                                        document.getElementById('my_modal_3').showModal();
+                                    }}
                                     className="btn text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]"
                                 >
                                     Details
@@ -162,39 +149,40 @@ const Project = () => {
                 ))}
             </div>
 
+            
+            <dialog id="my_modal_3" className="modal">
+                <div className="modal-box  bg-[#262c3a] text-white max-w-2xl">
+                    <form method="dialog">
+                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
 
-            {showModal && selectedProject && (
-                <div className="fixed inset-0 bg-black/40 backdrop-blur-md bg-opacity-60 flex items-center justify-center z-50">
-                    <div className="bg-[#262c3a] rounded-lg p-6 max-w-2xl w-full text-white relative">
-                        <button
-                            onClick={closeModal}
-                            className="absolute top-2 right-3 text-white text-xl hover:text-[#00c58e]"
-                        >
-                            &times;
-                        </button>
-                        <h2 className="text-3xl font-bold mb-3">{selectedProject.name}</h2>
-                        <img
-                            src={selectedProject.image}
-                            alt={selectedProject.name}
-                            className="w-full rounded-md mb-4"
-                        />
-                        <p className="mb-4">{selectedProject.description}</p>
-                        <p className="font-bold mb-2">Features:</p>
-                        <ul className="list-disc ml-6 space-y-1 mb-4">
-                            {selectedProject.features.map((feature, i) => (
-                                <li key={i}>{feature}</li>
-                            ))}
-                        </ul>
-                        <p className="font-bold">Technologies:</p>
-                        <div className="flex gap-3 flex-wrap mt-2">
-                            {selectedProject.techIcons.map((icon, i) => (
-                                <span key={i}>{icon}</span>
-                            ))}
-                        </div>
-                    </div>
+                    {selectedProject && (
+                        <>
+                            <h2 className="text-3xl font-bold mb-3">{selectedProject.name}</h2>
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.name}
+                                className="w-full rounded-md mb-4"
+                            />
+                            <p className="mb-4">{selectedProject.description}</p>
+                            <p className="font-bold mb-2">Features:</p>
+                            <ul className="list-disc ml-6 space-y-1 mb-4">
+                                {selectedProject.features.map((feature, i) => (
+                                    <li key={i}>{feature}</li>
+                                ))}
+                            </ul>
+                            <p className="font-bold">Technologies:</p>
+                            <div className="flex gap-3 flex-wrap mt-2">
+                                {selectedProject.techIcons.map((icon, i) => (
+                                    <span key={i}>{icon}</span>
+                                ))}
+                            </div>
+                        </>
+                    )}
                 </div>
-            )}
+            </dialog>
         </section>
     );
 };
+
 export default Project;

@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <footer className="bg-[#1b1f2a] text-white py-10 mt-16">
                 <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-lg text-center md:text-left">
+                    <p className=" text-sm md:text-lg text-center md:text-left">
                         © {new Date().getFullYear()} Md Shakib Akando. All rights reserved.
                     </p>
 
