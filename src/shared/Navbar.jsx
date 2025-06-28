@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router';
-
+import { Link, Links, NavLink } from 'react-router';
+import logo from '../../public/Logo.png'
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
@@ -19,10 +19,10 @@ const Navbar = () => {
 
     return (
         <div className=' bg-[#1b1f2a]'>
-            <div className='fixed top-0 z-50 backdrop-blur-md w-full'>
+            <div className='fixed top-0 z-50 bg-[#1b1f2a]/50 backdrop-blur-md w-full'>
                 <div className="navbar    max-w-11/12 mx-auto text-white py-3 shadow-sm">
                     <div className="navbar-start">
-                        <a className="btn btn-ghost text-xl">Akando</a>
+                        <Link><img className='h-[50px] md:h-[70px] ' src={logo} alt="" /></Link>
                     </div>
 
                     <div className='navbar-center'>
@@ -41,7 +41,9 @@ const Navbar = () => {
 
 
                         <div className='hidden lg:flex'>
-                            <button className='btn mr-2 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Resume</button>
+                            <a href="#contact">
+                                <button className='btn mr-2 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Hire Me</button>
+                            </a>
                         </div>
 
                         <button onClick={() => setOpen(true)} className="btn bg-[#1b1f2a]/10 outline-none border-none shadow-none backdrop-blur-md text-white lg:hidden">
@@ -71,7 +73,9 @@ const Navbar = () => {
                                 <li className='hover:text-[#00c58e]'><a href="#contact">Contact</a></li>
                         </ul>
                         <div className='lg:hidden  flex justify-center mt-10'>
-                            <button className='btn mr-2 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Resume</button>
+                            <a href="#contact">
+                                <button className='btn mr-2 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'>Hire Me</button>
+                            </a>
                         </div>
                     </div>
                 </div>

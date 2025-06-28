@@ -25,7 +25,7 @@ const Achievement = () => {
                     <div className="absolute inset-0 bg-black/60  flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="transform translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-in-out text-center">
                             <p className="text-lg font-semibold mb-2">PUB CSE Programming Contest 2024</p>
-                            <Link className="underline text-sm cursor-pointer">View</Link>
+                            <Link to={'https://drive.google.com/file/d/1Z1j_QurEGFRn1PdCkphCofB7skkKyG0j/view'} className="underline text-sm cursor-pointer">View</Link>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Achievement = () => {
                     <div className="absolute inset-0 bg-black/60  flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="transform translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-in-out text-center">
                             <p className="text-lg font-semibold mb-2">PUB CSE Hackathon Contest 2024</p>
-                            <Link className="underline text-sm cursor-pointer">View</Link>
+                            <Link to={'https://drive.google.com/file/d/1Vcw90HcbPiHHvDoHnmAKsd34pmEC0XP4/view'} className="underline text-sm cursor-pointer">View</Link>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Achievement = () => {
                     <div className="absolute inset-0 bg-black/60  flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="transform translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-in-out text-center">
                             <p className="text-lg font-semibold mb-2">Spoken English certificate </p>
-                            <Link className="underline text-sm cursor-pointer">View</Link>
+                            <Link to={'https://drive.google.com/file/d/1ps6Mu1dQ4wN_npJIAVNafdZoVKA2VwrQ/view'} className="underline text-sm cursor-pointer">View</Link>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Achievement = () => {
                     <div className="absolute inset-0 bg-black/60  flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="transform translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-in-out text-center">
                             <p className="text-lg font-semibold mb-2">HackerRank CSS</p>
-                            <Link className="underline text-sm cursor-pointer">View</Link>
+                            <Link to={'https://drive.google.com/file/d/1N8Nuxu1UE9Ppogs8S7R_ePMrXLDrASCz/view'} className="underline text-sm cursor-pointer">View</Link>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Achievement = () => {
                     <div className="absolute inset-0 bg-black/60  flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="transform translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-in-out text-center">
                             <p className="text-lg font-semibold mb-2">HackerRank problem solving</p>
-                            <Link className="underline text-sm cursor-pointer">View</Link>
+                            <Link to={'https://drive.google.com/file/d/1VdtbbtplHTtR4AznInUidIU2cIDPlP7t/view'} className="underline text-sm cursor-pointer">View</Link>
                         </div>
                     </div>
                 </div>
