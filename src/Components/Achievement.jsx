@@ -5,15 +5,18 @@ import Programming from '../assets/Achivement/Screenshot 2025-06-28 204748.png';
 import Spoken from '../assets/Achivement/Screenshot 2025-06-28 204901.png';
 import Hc from '../assets/Achivement/Screenshot 2025-06-28 204823.png';
 import Hp from '../assets/Achivement/Screenshot 2025-06-28 204847.png';
+import { Slide } from 'react-awesome-reveal';
+
 
 const Achievement = () => {
     return (
         <div className='py-10 bg-[#2d3340]'>
             <div className='max-w-11/12 mx-auto '>
-            <h2 className="text-3xl my-10 text-white font-bold   border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto ">
+            <h2 className="text-3xl my-10 text-white font-bold   pb-3 w-fit mx-auto ">
                 My Achievement
             </h2>
-            <div className='flex flex-col justify-center items-center  lg:flex-row flex-wrap gap-6'>
+            <Slide direction="up" duration={2000} triggerOnce >
+               <div className='flex flex-col justify-center items-center  lg:flex-row flex-wrap gap-6'>
                 <div className="max-w-xs relative group rounded-md shadow-md overflow-hidden">
                     <img
                         src={Programming}
@@ -90,6 +93,7 @@ const Achievement = () => {
                     </div>
                 </div>
             </div>
+            </Slide>
         </div>
         </div>
     );

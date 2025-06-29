@@ -28,8 +28,8 @@ const Contact = () => {
 	return (
 		<div>
 			<section id='contact' className="py-10  ">
-				<h2 className="text-3xl my-10 text-white font-bold   border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto ">
-					Contact Us
+				<h2 className="text-3xl my-10 text-white font-bold   pb-3 w-fit mx-auto ">
+					Contact Me
 				</h2>
 				<div className="grid max-w-6xl text-white grid-cols-1 px-6 md:pt-10 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 					<div className="py-6 md:py-0 md:px-6">

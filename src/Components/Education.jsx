@@ -5,7 +5,7 @@ const Education = () => {
          <section className="py-20 bg-[#2d3340]">
         <div className="container text-white mx-auto px-6" >
           <div className="  text-center mb-16" >
-            <h2 className="text-3xl font-bold  mb-4 border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto ">
+            <h2 className="text-3xl font-bold  mb-4  pb-3 w-fit mx-auto ">
                Education Qualification
             </h2>
            

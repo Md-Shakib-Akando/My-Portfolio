@@ -18,7 +18,7 @@ const Banner = () => {
                         <Link to={'https://www.facebook.com/sha.kib.493731'}><FaFacebook size={32} className='hover:text-[#00c58e]'></FaFacebook></Link>
 
                     </div>
-                    <a href='/public/Md_Shakib_Akando_CV.pdf' download className='btn text-[15px] w-fit md:mt-4 lg:mt-0 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'><LuDownload></LuDownload> Download Resume</a>
+                    <a href='/Md_Shakib_Akando_CV.pdf' download className='btn text-[15px] w-fit md:mt-4 lg:mt-0 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'><LuDownload></LuDownload> Download Resume</a>
                 </div>
                 <div className='  flex justify-center items-center md:flex-1 lg:ml-20 mt-20 md:mt-0'>
                     <img className='h-[300px] md:h-[400px] xl:h-[500px]  border-1 shadow-md shadow-[#00c58e]  border-[#00c58e] rounded-full' src={BannerImg} alt="" />

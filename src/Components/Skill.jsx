@@ -47,7 +47,7 @@ const Skill = () => {
   return (
     <section id='skill' className=' py-16 text-white'>
       <div className='max-w-6xl mx-auto px-4 text-center'>
-        <h2 className='text-4xl font-bold mb-8 border-b-2 border-b-[#00c58e] w-fit mx-auto pb-3'>My Skills</h2>
+        <h2 className='text-4xl font-bold mb-8  w-fit mx-auto pb-3'>My Skills</h2>
 
 
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 my-10 ">

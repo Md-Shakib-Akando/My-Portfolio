@@ -4,6 +4,7 @@ import ProjectImg2 from '../assets/ProjectImg/Screenshot 2025-06-28 185946.png';
 import ProjectImg3 from '../assets/ProjectImg/Screenshot 2025-06-28 185855.png';
 import { SiDaisyui, SiExpress, SiFirebase, SiMongodb, SiReact, SiTailwindcss, SiVite } from 'react-icons/si';
 
+
 const projects = [
     {
         id: 1,
@@ -82,11 +83,12 @@ const Project = () => {
 
     return (
         <section id="project" className="p-4 lg:p-8">
-            <h2 className="text-3xl my-10 text-white font-bold border-b-2 border-b-[#00c58e] pb-3 w-fit mx-auto">
+            <h2 className="text-3xl my-10 text-white font-bold  pb-3 w-fit mx-auto">
                 My Projects
             </h2>
 
-            <div className="container text-white mx-auto space-y-12">
+            
+                <div className="container text-white mx-auto space-y-12">
                 {projects.map((project, index) => (
                     <div
                         key={project.id}
@@ -148,6 +150,7 @@ const Project = () => {
                     </div>
                 ))}
             </div>
+            
 
             
             <dialog id="my_modal_3" className="modal">

@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className='fixed top-0 z-50 bg-[#1b1f2a]/50 backdrop-blur-md w-full'>
                 <div className="navbar    max-w-11/12 mx-auto text-white py-3 shadow-sm">
                     <div className="navbar-start">
-                        <Link><img className='h-[50px] md:h-[70px] ' src={logo} alt="" /></Link>
+                        <Link to='/'><img className='h-[50px] md:h-[70px] ' src={logo} alt="" /></Link>
                     </div>
 
                     <div className='navbar-center'>
