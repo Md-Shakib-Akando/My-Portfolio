@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router';
 const Banner = () => {
     return (
-        <div className='max-w-11/12 mx-auto'>
+        <div className='max-w-11/12 mx-auto lg:pt-15 '>
             <div className='flex flex-col-reverse md:flex-row  justify-between min-h-[calc(100vh-100px)]'>
                 <div className='flex justify-center md:flex-1 flex-col gap-4  items-center md:items-start text-center md:text-start xl:gap-7  ml-4 py-7 lg:py-0 text-white'>
                     <h1 className='text-3xl xl:text-5xl font-bold'>Hello,<span className='text-[#00c58e]'>I'm</span></h1>
@@ -18,7 +18,7 @@ const Banner = () => {
                         <Link to={'https://www.facebook.com/sha.kib.493731'}><FaFacebook size={32} className='hover:text-[#00c58e]'></FaFacebook></Link>
 
                     </div>
-                    <a href='/Md_Shakib_Akando.pdf' download className='btn text-[15px] w-fit md:mt-4 lg:mt-0 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'><LuDownload></LuDownload> Download Resume</a>
+                    <a href='/Md_Shakib_Akando_Resume.pdf' download className='btn text-[15px] w-fit md:mt-4 lg:mt-0 text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]'><LuDownload></LuDownload> Download Resume</a>
                 </div>
                 <div className='  flex justify-center items-center md:flex-1 lg:ml-20 mt-20 md:mt-0'>
                     <img className='h-[300px] md:h-[400px] xl:h-[500px]  border-1 shadow-md shadow-[#00c58e]  border-[#00c58e] rounded-full' src={BannerImg} alt="" />
