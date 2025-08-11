@@ -67,10 +67,10 @@ const Navbar = () => {
                         </div>
                         <ul className="space-y-10 text-center">
                             <li className='hover:text-[#00c58e]'><a href="#">Home</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#about">About</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#skill">Skills</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#project">Project</a></li>
-                                <li className='hover:text-[#00c58e]'><a href="#contact">Contact</a></li>
+                            <li className='hover:text-[#00c58e]'><a href="#about">About</a></li>
+                            <li className='hover:text-[#00c58e]'><a href="#skill">Skills</a></li>
+                            <li className='hover:text-[#00c58e]'><a href="#project">Project</a></li>
+                            <li className='hover:text-[#00c58e]'><a href="#contact">Contact</a></li>
                         </ul>
                         <div className='lg:hidden  flex justify-center mt-10'>
                             <a href="#contact">

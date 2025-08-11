@@ -16,7 +16,7 @@ const Footer = () => {
                     </p>
 
                     <div className="flex gap-4 justify-center">
-                        <Link to="https://www.linkedin.com/in/md-shakib-akando-b1a84533b/">
+                        <Link to="https://www.linkedin.com/in/md-shakib-akando/">
                             <FaLinkedin size={32} className="hover:text-[#00c58e]" />
                         </Link>
                         <Link to="https://github.com/Md-Shakib-Akando">
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            
+
             <button
                 onClick={scrollToTop}
                 className="fixed bottom-6 right-6 bg-[#1b1f2a] text-[#056d51] p-2 rounded-full shadow-lg  transition"
