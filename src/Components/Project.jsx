@@ -132,7 +132,7 @@ const Project = () => {
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className="w-full h-70 md:h-100 rounded-md transition-transform duration-300 ease-in-out hover:scale-110 aspect-video hover:cursor-pointer"
+                                className="w-full h-70 md:h-100 rounded-md transition-transform duration-300 ease-in-out hover:scale-110 aspect-video hover:cursor-pointer opacity-80 hover:opacity-100"
                             />
                         </div>
 
@@ -153,7 +153,7 @@ const Project = () => {
                                 ))}
                             </div>
 
-                            <div className="flex flex-wrap gap-2  lg:gap-4">
+                            <div className="grid grid-cols-2 md:flex gap-2  lg:gap-4">
                                 <button
                                     onClick={() => {
                                         setSelectedProject(project);
@@ -165,22 +165,22 @@ const Project = () => {
                                 </button>
 
                                 {project.live && (
-                                    <a href={project.live} target="_blank" rel="noopener noreferrer">
-                                        <button className="btn text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
+                                    <a href={project.live} className='w-full md:w-fit' target="_blank" rel="noopener noreferrer">
+                                        <button className="btn w-full md:w-fit text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
                                             Live Demo
                                         </button>
                                     </a>
                                 )}
                                 {project.client && (
-                                    <a href={project.client} target="_blank" rel="noopener noreferrer">
-                                        <button className="btn text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
+                                    <a href={project.client} className='w-full md:w-fit' target="_blank" rel="noopener noreferrer">
+                                        <button className="btn  w-full md:w-fit text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
                                             Client Side
                                         </button>
                                     </a>
                                 )}
                                 {project.server && (
-                                    <a href={project.server} target="_blank" rel="noopener noreferrer">
-                                        <button className="btn text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
+                                    <a href={project.server} className='w-full md:w-fit' target="_blank" rel="noopener noreferrer">
+                                        <button className="btn  w-full md:w-fit text-white shadow-none bg-[#00c58e] border-[#00c58e] hover:text-[#00c58e] hover:bg-[#1b1f2a]">
                                             Server Side
                                         </button>
                                     </a>

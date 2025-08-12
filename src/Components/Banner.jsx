@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className='text-3xl xl:text-5xl font-bold'>Hello,<span className='text-[#00c58e]'>I'm</span></h1>
                     <h1 className='text-4xl xl:text-7xl font-bold text-[#00c58e] '>Shakib Akando</h1>
                     <h3 className=' text-3xl xl:text-5xl font-semibold '>Front-end Developer</h3>
-                    <p className='text-[#a3a6ad]'>I’m currently studying Computer Science and Engineering, and I’m deeply passionate about frontend web development. I approach every project with dedication and truly enjoy putting my heart into the work I love</p>
+                    <p className='text-[#a3a6ad] text-justify'>I’m currently studying Computer Science and Engineering, and I’m deeply passionate about frontend web development. I approach every project with dedication and truly enjoy putting my heart into the work I love</p>
                     <div className='flex gap-4'>
                         <Link to={'https://www.linkedin.com/in/md-shakib-akando/'}><FaLinkedin size={32} className='hover:text-[#00c58e]'></FaLinkedin></Link>
                         <Link to={'https://github.com/Md-Shakib-Akando'}><FaGithub size={32} className='hover:text-[#00c58e]'></FaGithub></Link>
